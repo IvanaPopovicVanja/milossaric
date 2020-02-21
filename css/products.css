@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+*{
+  text-transform: lowercase;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color: #3A4653;
+    line-height: 1.4;
+    text-transform: lowercase;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+      height: 100%;
+      background-image: url(../img/photos/azasajt/1a.jpg);
+
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 40px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+small {
+    font-size: 12px;
+    color: gray;
+}
+h2 a {
+  color: gray;
+}
+.main-header {
+    background-color: rgba(237,237,237,0.1);;
+    padding: 20px 40px;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    transition: all .3s;
+}
+.change-header {
+    padding: 10px 40px;
+}
+
+.logo {
+    display: inline-block;
+    margin: 0;
+    font-size: 40px;
+    color: #3A4653;
+    font-weight: bold;
+    margin-left: 50px;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(58, 70, 83, 0.99);
+    z-index: 9998;
+    display: none;
+}
+
+nav .nav-links-holder {
+         width: 100%;
+         height: 100%;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+     }
+nav ul {
+    text-align: center;
+}
+
+nav li {
+    margin-bottom: 30px;
+}
+
+nav ul li:last-child {
+    margin-bottom: 0;
+}
+
+nav ul li a {
+    font-size: 40px;
+    color: #ededed;
+    text-transform: uppercase;
+}
+
+nav ul li a:hover {
+    color: #4281A4;
+    text-decoration: none;
+}
+.nav-button {
+    position: absolute;
+    top: 40px;
+    right: 90px;
+    z-index: 9999;
+    cursor: pointer;
+    transition: all .3s;
+}
+.change-header .nav-button {
+    top: 20px;
+}
+
+.nav-button span {
+    width: 30px;
+    height: 3px;
+    background-color: #95999e;
+    display: block;
+    transition: all .3s;
+}
+.white span {
+    background-color: #fff;
+}
+.nav-button span:nth-child(2) {
+    margin: 5px 0;
+}
+
+#home, #products, #bracelets, #contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*background-image:url("../img/photos/azasajt/slide5a.jpg");*/
+#products {
+  margin: 0 50px;
+}
+#products p {
+    text-align: center;
+}
+#products {
+  /* The image used */
+  background-image: url("../img/photos/azasajt/1a.jpg");
+  /* Full height */
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  width: 1200px;
+  margin-top: 100px;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+.main-footer {
+    padding: 37px 0;
+    background-color: #3A4653;
+    text-align: center;
+  
+}
+.list-reset {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+/*paralax*/
+
+
+
+.galerija,.miloss {
+  margin-bottom: 50px;
+}
+
+.miloss {
+  /* The image used */
+  background-image: url("../img/photos/azasajt/slide2a.jpg");
+  /* Full height */
+  width: 100%;
+  height: 200px;
+  line-height: 200px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-decoration: none;
+}
+a:hover{
+  text-decoration: none;
+}
+a:focus {
+  text-decoration: none;
+}
+/* plugin validate */
+
+.clearfix::before,
+.clearfix::after{
+  content: " ";
+  display: table;
+}
+.clearfix::after {
+  clear:both;
+}
+section .col:nth-last-of-type(2n+3){
+  clear: both;
+}
+h2 {
+  background-image: none;
+}
+.resize {
+  width: 250px;
+  height: 350px;
+}
+.img-responsive {
+
+  transition: all 2s;
+}
+.img-responsive:hover{
+  transform: scale(1.5);
+  animation: 0;
+  transform: 0;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#c8d7eb+26,d2dfed+31,d2dfed+31,bed0ea+51,afc7e8+62,a6c0e3+68,a6c0e3+68,bad0ef+75,99b5db+88,799bc8+100 */
+  background: #c8d7eb; /* Old browsers */
+  background: -moz-linear-gradient(top,  #c8d7eb 26%, #d2dfed 31%, #d2dfed 31%, #bed0ea 51%, #afc7e8 62%, #a6c0e3 68%, #a6c0e3 68%, #bad0ef 75%, #99b5db 88%, #799bc8 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  #c8d7eb 26%,#d2dfed 31%,#d2dfed 31%,#bed0ea 51%,#afc7e8 62%,#a6c0e3 68%,#a6c0e3 68%,#bad0ef 75%,#99b5db 88%,#799bc8 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  #c8d7eb 26%,#d2dfed 31%,#d2dfed 31%,#bed0ea 51%,#afc7e8 62%,#a6c0e3 68%,#a6c0e3 68%,#bad0ef 75%,#99b5db 88%,#799bc8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c8d7eb', endColorstr='#799bc8',GradientType=0 ); /* IE6-9 */
+
+}
+.fb {
+  margin: 0;
+  padding: 0;
+
+}
+.fb,a{
+  color:white;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+
+}
+.bottom {
+  margin-bottom: 30px;
+}
+@media (min-width: 576px) {
+  img.holder {
+    margin: 0 auto;
+  }
+  .img-holder:nth-of-type(5n+6) {
+    clear:both;
+  }
+ }
+@media (min-width: 768px) {
+  img.holder {
+    margin: 0 auto;
+  }
+  .img-holder:nth-of-type(5n+6) {
+    clear:both;
+  }
+}

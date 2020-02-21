@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+*{
+  text-transform: lowercase;
+
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color: #3A4653;
+    line-height: 1.4;
+    text-transform: lowercase;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+      height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 40px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+small {
+    font-size: 12px;
+    color: gray;
+}
+h2 a {
+  color: gray;
+}
+.main-header {
+    background-color: rgba(237,237,237,0.1);;
+    padding: 20px 40px;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    transition: all .3s;
+}
+.change-header {
+    padding: 10px 40px;
+}
+
+.logo {
+    display: inline-block;
+    margin: 0;
+    font-size: 40px;
+    color: #3A4653;
+    font-weight: bold;
+    margin-left: 50px;
+}
+nav {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(58, 70, 83, 0.99);
+    z-index: 9998;
+    display: none;
+}
+
+nav .nav-links-holder {
+         width: 100%;
+         height: 100%;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+     }
+nav ul {
+    text-align: center;
+}
+
+nav li {
+    margin-bottom: 30px;
+}
+
+nav ul li:last-child {
+    margin-bottom: 0;
+}
+
+nav ul li a {
+    font-size: 40px;
+    color: #ededed;
+    text-transform: uppercase;
+}
+
+nav ul li a:hover {
+    color: #4281A4;
+    text-decoration: none;
+}
+.nav-button {
+    position: absolute;
+    top: 40px;
+    right: 90px;
+    z-index: 9999;
+    cursor: pointer;
+    transition: all .3s;
+}
+.change-header .nav-button {
+    top: 20px;
+}
+
+.nav-button span {
+    width: 30px;
+    height: 3px;
+    background-color: #95999e;
+    display: block;
+    transition: all .3s;
+}
+.white span {
+    background-color: #fff;
+}
+
+.nav-button span:nth-child(2) {
+    margin: 5px 0;
+}
+
+#home, #products, .bracelets {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*background-image:url("../img/photos/azasajt/slide5a.jpg");*/
+#home h2 {
+    color: gray;
+    background-image:url("../img/photos/archive/resize/sivprof.jpg");
+    padding: 30px;
+}
+.bracelets  {
+    background-image:url("../img/photos/azasajt/1a.jpg");
+    background-size: cover;
+}
+.bracelets {
+  /*background-image: url("../img/photos/azasajt/bracelets/n16-hor.jpg");*/
+  background-image:url("../img/photos/azasajt/bracelets/n16-hor.jpg");
+  padding-bottom: 0;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  min-height: 300px;
+}
+
+#bracelets h2 {
+    color: #gray;
+}
+#bracelets {
+    margin-bottom: 60px;
+}
+.container {
+  position: relative;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+.list-reset {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+/*paralax*/
+
+.parallax {
+  /* The image used */
+  background-image: url("../img/photos/azasajt/1a.jpg");
+  /* Full height */
+  height: 100%;
+  width: 100%;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bracelets {
+  /* The image used */
+  background-image: url("../img/photos/azasajt/bracelets/400-n16-1.jpg");
+  /* Full height */
+  height: 100%;
+  width: 100%;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.milos {
+  /* The image used */
+  background-image: url("../img/photos/azasajt/slide2a.jpg");
+  /* Full height */
+  width: 100%;
+  height: 300px;
+  line-height: 300px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+a:hover{
+  text-decoration: none;
+}
+a:focus {
+  text-decoration: none;
+}
+/* plugin validate */
+
+.clearfix::before,
+.clearfix::after{
+  content: " ";
+  display: table;
+}
+.clearfix::after {
+  clear:both;
+}
+section .col:nth-last-of-type(2n+3){
+  clear: both;
+}
+ .main-footer {
+   padding: 37px 0;
+   background-color: #3A4653;
+   text-align: center;
+   height: 100px;
+}
+.fb {
+  margin: 0;
+  padding: 0;
+}
+.fb,a{
+  color:white;
+}
