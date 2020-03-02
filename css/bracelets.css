@@ -51,7 +51,7 @@ h2 a {
     font-size: 40px;
     color: #3A4653;
     font-weight: bold;
-    margin-left: 50px;
+    margin-left: 30px;
 }
 nav {
     position: fixed;
@@ -125,28 +125,16 @@ nav ul li a:hover {
     align-items: center;
     justify-content: center;
 }
-
 /*background-image:url("../img/photos/azasajt/slide5a.jpg");*/
 #home h2 {
     color: gray;
     background-image:url("../img/photos/archive/resize/sivprof.jpg");
     padding: 30px;
 }
-.bracelets  {
-    background-image:url("../img/photos/azasajt/1a.jpg");
-    background-size: cover;
-}
-.bracelets {
-  /*background-image: url("../img/photos/azasajt/bracelets/n16-hor.jpg");*/
-  background-image:url("../img/photos/azasajt/bracelets/n16-hor.jpg");
-  padding-bottom: 0;
-  background-position: bottom center;
-  background-repeat: no-repeat;
-  min-height: 300px;
-}
 
 #bracelets h2 {
     color: #gray;
+    padding: 30px;
 }
 #bracelets {
     margin-bottom: 60px;
@@ -156,8 +144,11 @@ nav ul li a:hover {
 }
 .row {
   display: flex;
-  flex-wrap: wrap;
+ flex-flow: wrap;
   margin-bottom: 20px;
+}
+.img-responsive {
+  flex-wrap: wrap;
 }
 .list-reset {
     list-style: none;
@@ -165,7 +156,6 @@ nav ul li a:hover {
     padding: 0;
 }
 /*paralax*/
-
 .parallax {
   /* The image used */
   background-image: url("../img/photos/azasajt/1a.jpg");
@@ -180,7 +170,7 @@ nav ul li a:hover {
 }
 .bracelets {
   /* The image used */
-  background-image: url("../img/photos/azasajt/bracelets/400-n16-1.jpg");
+  background-image: url("../img/photos/azasajt/bracelets/n16-hor.jpg");
   /* Full height */
   height: 100%;
   width: 100%;
@@ -189,21 +179,8 @@ nav ul li a:hover {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  min-height: 300px;
 }
-.milos {
-  /* The image used */
-  background-image: url("../img/photos/azasajt/slide2a.jpg");
-  /* Full height */
-  width: 100%;
-  height: 300px;
-  line-height: 300px;
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 a:hover{
   text-decoration: none;
 }
