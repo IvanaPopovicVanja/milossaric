@@ -11,7 +11,7 @@ function sectionHight() {
  footerHeight = $('.main-footer').outerHeight();
  console.log(winHeight);
  console.log(footerHeight);
- $('#home, #products, #bracelets, #contact').css('min-height', winHeight);
+ $('#home, #products, #bracelets').css('min-height', winHeight);
  $('contact').css('min-height', winHeight - footerHeight);
 }
 sectionHight();
@@ -40,12 +40,14 @@ $('html, body').animate({
   scrollTop : sectionPosition
 }, 1000);
 });
-
 // skupljanje headera na scrolling
 $(window).on('scroll', function () {
   fromTop = $(window).scrollTop();
   console.log(fromTop);
 
+  function goBack() {
+   window.history.back();
+ };
 
   if(fromTop > 100) {
     mainHeader.addClass('change-header');
